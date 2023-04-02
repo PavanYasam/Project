@@ -1,0 +1,32 @@
+console.log("this is pavan")
+var a;
+a=10;
+console.log(a);
+var b=90;
+var b=100;
+console.log(b);
+let x=20;
+console.log(x);
+const o=50;
+console.log(o);
+var b;
+console.log(b);
+var b=10;
+b="hello";
+console.log(b);
+let b1=50;
+console.log(b1);
+const d=10;
+console.log(d);
+console.log(a);
+console.log(b);
+var a=10;
+console.log(a);
+var b=20;
+console.log(b);
+console.log(i);
+var i=20;
+var j=30;
+console.log(i);
+console.log(j);
+

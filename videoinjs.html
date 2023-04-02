@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>---toggle---</h1>
+    <video src="../Charlie_Puth_Attention_Official_Video__nfs8NYg7yQM_137.mp4" id="video" ></video>
+    <button onclick="vid()" id="btn">chhhhh</button>
+    <script>
+        let video=document.getElementById("video")//
+        console.log(video);
+        let kee=document.getElementById("btn");
+       function vid(){
+            let porp=btn.classList.toggle("play")
+            if(porp)
+            {
+                video.play()
+                kee.innerHtml="play";
+            }
+            else{
+                video.pause()
+                kee.innerHtml="pass";
+            }
+        }
+    </script>
+    
+</body>
+</html>

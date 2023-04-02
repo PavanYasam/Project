@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="button-maker-bg-container p-4">
+        <h1 class="button-maker-heading text-center mb-4">Button Maker</h1>
+        <div class="button-maker-container bg-light pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <p >BACKGROUND COLOR</p>
+                        <input  type="text" id="bgColorInput" />
+                        <p >FONT COLOR</p>
+                        <input  type="text" id="fontColorInput" />
+                        <p >FONT SIZE (in px)</p>
+                        <input  type="text" id="fontSizeInput" />
+                        <p >FONT WEIGHT</p>
+                        <input  type="text" id="fontWeightInput" />
+                        <p >PADDING (in px)</p>
+                        <input  type="text" id="paddingInput" />
+                        <p >BORDER RADIUS (in px)</p>
+                        <input  type="text" id="borderRadiusInput" />
+                        <div class="text-right mt-4">
+                            <button id="applyButton" class="btn btn-primary" onclick="applyButton()">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mt-4 text-center">
+                        <button class="custom-button" id="customButton">Custom Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bgColorElement = document.getElementById("bgColorInput");
+let fontColorElement = document.getElementById("fontColorInput");
+let fontSizeElement = document.getElementById("fontSizeInput");
+let fontWeightElement = document.getElementById("fontWeightInput");
+let paddingElement = document.getElementById("paddingInput");
+let borderRadiusElement = document.getElementById("borderRadiusInput");
+let btnElement = document.getElementById("customButton");
+
+function applyButton() {
+    btnElement.style.backgroundColor = bgColorElement.value;
+    btnElement.style.color = fontColorElement.value;
+    btnElement.style.fontSize = fontSizeElement.value;
+    btnElement.style.fontWeight = fontWeightElement.value;
+    btnElement.style.padding = paddingElement.value;
+    btnElement.style.borderRadius = borderRadiusElement.value;
+}
+    </script>
+</body>
+</html>

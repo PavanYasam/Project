@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction:column;
+        background-color: gray;
+        height:200px;
+        width:300px;
+        padding: 20px;
+       }
+       #sec{
+        flex-direction: row;
+        margin-top: 0px;
+        margin-bottom: 0px;
+       }
+
+        #dec{
+         background-color: black; 
+         color:orangered ;
+        }
+        #set{
+            background-color: black;
+            color: aliceblue;
+        }
+        #inc{
+            background-color: black;
+            color:dodgerblue;
+        }
+        h1{
+            margin-top: 80px;
+            font-size: 50px;
+
+        }
+        p{
+        font-size:100px ;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Counter</h1><br>
+            <br>
+        <p id="cv"></p>
+        <br>
+    </div>
+    <div id="sec">
+        <button  id="dec" onclick="decrement()">decrease</button>
+        <button  id="set" onclick="set()">reset</button>
+        <button  id="inc" onclick="increment()">increase</button>
+    </div>
+    <script>
+        let a=0;
+        document.getElementById("cv").textContent=a;
+        function decrement(){
+            
+            a=a-1;
+            if(a<0)
+            {
+                document.getElementById("cv").style.color="red"
+            }
+    
+            document.getElementById("cv").innerHTML=a;
+        }console.log(a);
+        
+        function increment(){
+            a=a+1;
+            if(a>0)
+            {
+                document.getElementById("cv").style.color="blue"
+
+            }
+            document.getElementById("cv").innerHTML=a;
+ 
+
+        }
+        function set(){
+            a=a-a;
+            if(a==0)
+            {
+                document.getElementById("cv").style.color="white"
+
+            }
+            document.getElementById("cv").innerHTML=a;
+
+
+        }
+        console.log(a);
+
+
+    </script>
+</body>
+</html>

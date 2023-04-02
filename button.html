@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <td>enter background colour</td>
+                <td><input type="text" id="bg"></td>
+            </tr>
+            <tr>
+                <td>enter  colour</td>
+                <td><input type="text" id="col"></td>
+            </tr>
+            <tr>
+                <td>enter  font size in (px)</td>
+                <td><input type="text" id="font"></td>
+            </tr>
+            <tr>
+                <td>enter borderRadius in (px)</td>
+                <td><input type="text" id="radius"></td>
+            </tr>
+            <tr>
+                <td><button onclick="apply()">apply</button></td>
+                
+            </tr>
+        </table>
+        <div>
+            <button id="btn">button</button>
+        </div>
+    
+   <script>
+    let bgcolor=document.getElementById("bg");
+    let c=document.getElementById("col");
+    let fon=document.getElementById("font")
+    let rad=document.getElementById("radius")
+    let btnElement=document.getElementById("btn");
+    function apply(){
+        btnElement.style.backgroundColor=bgcolor.value;
+        btnElement.style.color=c.value;
+        btnElement.style.borderRadius=rad.value;
+        btnElement.style.fontSize=fon.value;
+
+    }
+
+   </script> 
+</body>
+</html>

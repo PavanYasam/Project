@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a1,#a2,#a3{
+            
+            background-color: grey;
+            border-radius: 30px;
+            height:30px;
+            width:30px;
+        }
+        #sub{
+            height:200px;
+            width:80px;
+            background-color:rgb(30, 33, 39);
+            border-radius: 30px;
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        #main{
+            height:300px;
+            width:250px;
+            background-color: cornflowerblue;
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+        }
+        #sub1{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            flex-direction: column;
+            
+        }
+        #b1,#b2,#b3{
+            height:30px;
+            width:60px;
+            border-radius: 10px;
+            margin:13px;
+            background-color: grey;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="sub1">
+            
+            <button id="b1" onclick="red()">stop</button>
+            <button id="b2" onclick="yellow()">ready</button>
+            <button id="b3" onclick="green()">go</button>
+
+        </div>
+
+    <div id="sub">
+    <button id="a1" ></button>
+    <button id="a2" ></button>
+    <button id="a3" ></button>
+  
+    </div>
+    </div>
+    <script>
+        function red(){
+        document.getElementById("b1").style.backgroundColor="red";
+        document.getElementById("a1").style.backgroundColor="red";
+        document.getElementById("a2").style.backgroundColor="grey";
+        document.getElementById("b2").style.backgroundColor="grey";
+        document.getElementById("a3").style.backgroundColor="grey";
+        document.getElementById("b3").style.backgroundColor="grey";
+
+
+        }
+        function yellow(){
+            document.getElementById("a2").style.backgroundColor="yellow";
+            document.getElementById("b2").style.backgroundColor="yellow";
+            document.getElementById("b1").style.backgroundColor="grey";
+            document.getElementById("a1").style.backgroundColor="grey";
+            document.getElementById("a3").style.backgroundColor="grey";
+            document.getElementById("b3").style.backgroundColor="grey";
+
+
+
+        }
+        function green(){
+            document.getElementById("a3").style.backgroundColor="green";
+            document.getElementById("b3").style.backgroundColor="green";
+            document.getElementById("a2").style.backgroundColor="grey";
+            document.getElementById("b2").style.backgroundColor="grey";
+            document.getElementById("b1").style.backgroundColor="grey";
+            document.getElementById("a1").style.backgroundColor="grey";
+      
+
+
+        }
+
+    </script>
+</body>
+</html>

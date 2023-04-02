@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height:400px;
+            width:300px;
+            border:2px,solid;
+            display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction:row;
+       
+        
+
+        }
+        #a1{
+            height:50px;
+            width:100px;
+            background-color: hsl(271, 76%, 53%);
+        }
+        #a2{
+            height:50px;
+            width:100px;
+            background-color: chartreuse;
+        }
+        #a3{
+            height:50px;
+            width:100px;
+            background-color: cyan;
+        }
+        *{
+            color:black
+        }
+
+    </style>
+</head>
+<body>
+   <div id="main">
+    <button id="a1" onclick="blue()">pavan</button>
+    <button id="a2" onclick="green()">kumar</button>
+    <button id="a3" onclick="cyan()">yasam</button>
+   </div>
+   <script>
+    function blue(){
+        document.getElementById("main").style.backgroundColor="blueviolet";
+
+    }
+    function green(){
+        document.getElementById("main").style.backgroundColor="chartreuse";
+
+    }
+    function cyan(){
+        document.getElementById("main").style.backgroundColor="cyan";
+
+    }
+
+   </script>
+</body>
+</html>

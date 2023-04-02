@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your cart</title>
+    <style>
+        #main{
+            background-image: linear-gradient(to top right,rgb(241, 234, 82),rgb(233, 40, 40));
+            height:100vh;
+            width:100vw;
+            background-size: cover;
+        }
+        #head{
+            height:80px;
+            color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            flex-shrink: 1;
+            background-image: linear-gradient(to right,rgb(80, 72, 72),rgb(70, 48, 48));
+        }
+        #menu ul{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin:0px;
+            height:20px;
+            padding:10px;
+            background-image: linear-gradient(to right,rgb(80, 72, 72),rgb(70, 48, 48));
+        }
+        #down{
+            font-size:large;
+        }
+        #menu ul li{
+            list-style: none;
+            font-size:medium;
+            
+           
+            
+        }
+        li:hover{
+            color: white;
+            
+           
+           
+        }
+        img{
+            height:300px;
+            width:400px;
+            margin:50px;
+        }
+        
+        table{
+            text-align: center;
+        }
+        #home,#bill,#details{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        button{
+            height:30px;
+            width:150px;
+            background-color: orangered;
+            border:0px;
+            border-radius: 25px;
+        }
+    
+        
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="head"><h2>Men's WARDROBE</h2></div>
+        <div id="menu">
+            <ul>
+            <li>Home</li>
+            <li>Orders</li>
+            <li>Account</li>
+            <li>Cart</li>
+            <li>Returns</li>
+            <li>Support</li>
+            </ul>
+        </div>
+        <div id="bill">
+            <img src="https://m.media-amazon.com/images/I/61KuFwy2Y7L._UL1500_.jpg">
+            <div id="details"> Product details<br>
+                Language ‏ : ‎ English, English, English, English, English<br>
+                Product Dimensions ‏ : ‎ 30 x 15 x 5 cm; 230 Grams<br>
+                Date First Available ‏ : ‎ 5 June 2021<br>price:1499/-<br><br><button>proceed to buy</button></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

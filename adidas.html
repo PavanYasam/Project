@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <style>
+        #main{
+            background-image: linear-gradient(to top right,rgb(241, 234, 82),rgb(233, 40, 40));
+            height:100vh;
+            width:100vw;
+            background-size: cover;
+            padding:2px;
+        }
+        #head{
+            height:80px;
+            color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+            font-size: 30px;
+            flex-shrink: 1;
+            background-image: linear-gradient(to right,rgb(80, 72, 72),rgb(70, 48, 48));
+        }
+        #home{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+        }
+        #menu ul{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin:0px;
+            height:20px;
+            padding:10px;
+            background-image: linear-gradient(to right,rgb(80, 72, 72),rgb(70, 48, 48));
+        }
+        #down{
+            font-size:large;
+        }
+        #menu ul li{
+            list-style: none;
+            font-size:medium;
+            position: relative;
+            
+           
+            
+        }
+        li:hover{
+            color: white;
+            
+           
+           
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        img{
+            height:200px;
+            width:200px;
+            margin:30px;
+
+            }
+            img:hover{
+                height:300px;
+                width:400px;
+                border-radius: 30px;
+            }
+        #text,#cart{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            height:30px;
+            background-color:darkgrey;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+            <div id="head"><h2>Men's WARDROBE</h2></div>
+            <div id="menu"><ul>
+                <li>Home</li>
+                <li>Orders</li>
+                <li>Account</li>
+                <li><a href="cart.html" target="_blank">Cart</a></li>
+                <li>Returns</li>
+                <li>Support</li>
+                </ul>
+            </div>
+            <div id="home">
+
+                <img src="https://m.media-amazon.com/images/I/61KuFwy2Y7L._UL1500_.jpg">
+                <img src="https://m.media-amazon.com/images/I/61nb6S9eNDL._UL1083_.jpg">
+                <img src="https://m.media-amazon.com/images/I/61Zhy5y4YEL._UL1500_.jpg">
+            </div>
+            <div id=text>
+                Product details<br>
+                Language ‏ : ‎ English, English, English, English, English<br>
+                Product Dimensions ‏ : ‎ 30 x 15 x 5 cm; 230 Grams<br>
+                Date First Available ‏ : ‎ 5 June 2021<br>
+                Manufacturer ‏ : ‎ ADIDAS INDIA MARKETING PRIVATE LIMITED<br>
+                ASIN ‏ : ‎ B096NBGCZ4<br>
+                Item model number ‏ : ‎ GZ5921<br>
+                Department ‏ : ‎ Unisex-adult<br>
+                Manufacturer ‏ : ‎ ADIDAS INDIA MARKETING PRIVATE LIMITED, ADIDAS INDIA MARKETING PRIVATE LIMITED<br>
+                Packer ‏ : ‎ ADIDAS INDIA MARKETING PRIVATE LIMITED<br>
+                Item Weight ‏ : ‎ 230 g
+                Item Dimensions LxWxH ‏ : ‎ 30 x 15 x 5 Centimeters
+                Net Quantity ‏ : ‎ 1 count<br>
+                Generic Name ‏ : ‎ Slide
+            </div>
+            <div id="cart"><a href="cart.html" target="_blank"><button>Add to cart</button></a></div>
+    </div>
+    
+</body>
+</html>
